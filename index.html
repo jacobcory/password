@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title is-centered is-size-2">
+                                Password Generator
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <div class="pw-container">
+                                    <div class="pw">
+                                        <div class="field">
+                                            <div class="control">
+                                                <textarea id="pw-dis" class="textarea is-medium has-fixed-size" rows="1"
+                                                    readonly>Password</textarea>
+                                                <button id="copy" class="button is-success is-fullwidth copy">Copy
+                                                    Password</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container pw-select">
+                                    <div class="columns">
+                                        <div class="column is-half is-offset-one-quarter">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <label for="length" class="is-size-5">
+                                                        <input id="length" type="number" min="8" max="20">
+                                                        Password Length
+                                                    </label>
+                                                    <label for="upper" class="checkbox is-size-5">
+                                                        <input id="upper" type="checkbox">
+                                                        Contains Uppercase Letters
+                                                    </label>
+                                                    <br>
+                                                    <label for="lower" class="checkbox is-size-5">
+                                                        <input id="lower" type="checkbox">
+                                                        Contains Lowercase Letters
+                                                    </label>
+                                                    <br>
+                                                    <label for="number" class="checkbox is-size-5">
+                                                        <input id="number" type="checkbox">
+                                                        Contains Numbers
+                                                    </label>
+                                                    <br>
+                                                    <label for="symbol" class="checkbox is-size-5">
+                                                        <input id="symbol" type="checkbox">
+                                                        Contains Symbols
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <button id="generate" class="button is-medium is-fullwidth is-info">Generate
+                                Password</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
